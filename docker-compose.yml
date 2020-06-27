@@ -9,7 +9,7 @@ services:
         restart: always
         command: bash -c "yarn install && yarn start:dev"
         environment:
-            - POSTGRES_URI=postgres://db:5432/task-management
+            - POSTGRES_URI=postgres://db:5432/task_management
         volumes:
             - ./dist/:/usr/src/nestjs-task-management/dist/
             - ./package.json:/usr/src/nestjs-task-management/package.json
